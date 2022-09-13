@@ -9,12 +9,14 @@ public class App {
         do {
             n=Integer.parseInt(JOptionPane.showInputDialog("Introduce un valor o -1 para terminar ->"));
 
-            if (n==1) {
+            if (n==-1) {
                 sentinel=false;
             } else {
-                obj.setX(x);
-                JOptionPane.showMessageDialog(null, "El factorial interativo es: "+obj.FactIterativo());
+                obj.setX(n);
+                JOptionPane.showMessageDialog(null, "El factorial interativo es: "+obj.FactIterativo()
+                + "\nEl factorial recurisvo es: "+obj.factRecursivo());
             }
         } while (sentinel);
+        JOptionPane.showMessageDialog(null, "bye");
     }
 }

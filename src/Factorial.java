@@ -16,7 +16,7 @@ public class Factorial {
     // * Método interativo Factorial
     public int FactIterativo(){
         int fact=1;
-        for (int i = 0; i <= x; i++) {
+        for (int i = 1; i <= x; i++) {
             fact*=i;
         }
         return fact;
