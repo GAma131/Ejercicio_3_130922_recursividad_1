@@ -1,7 +1,10 @@
-package Ejemplo_1;
+
 import javax.swing.JOptionPane;
 
-public class App {
+import Ejemplo_1.Factorial;
+import Ejemplo_1.Fibonacci;
+
+public class App1 {
     public static void main(String[] args) {
         Fibonacci obj = new Fibonacci(8);
         System.out.println(obj.fiboRecursivo());

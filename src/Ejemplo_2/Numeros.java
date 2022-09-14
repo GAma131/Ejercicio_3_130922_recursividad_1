@@ -1,9 +1,9 @@
 package Ejemplo_2;
 
-public class Imprimir {
+public class Numeros {
     private int n;
 
-    public Imprimir(int n) {
+    public Numeros(int n) {
         setN(n);
     }
 
@@ -15,10 +15,10 @@ public class Imprimir {
         return n;
     }
 
-    public String impHola(){
+    public String impNumeros(){
         String imp="";
-        for (int i = 0; i < n; i++) {
-            imp+="Hola mundo\n";
+        for (int i = 1; i <= n; i++) {
+            imp+=i+"\n";
         }
         return imp;
     }
