@@ -1,4 +1,5 @@
 package Ejemplo_1;
+
 public class Factorial {
     private int x;
 
