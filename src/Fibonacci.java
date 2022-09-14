@@ -1,6 +1,7 @@
 import javax.tools.ForwardingJavaFileObject;
 
 public class Fibonacci {
+    private int n;
 
     public Fibonacci(){
         setN(n);
@@ -26,7 +27,7 @@ public class Fibonacci {
     private int fibo(int n){
         if (n==0) {
             // Caso Base:
-            return 0
+            return 0;
         } else if(n==1) {
             // Caso Base
             return 1;
