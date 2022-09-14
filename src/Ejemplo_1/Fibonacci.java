@@ -1,9 +1,10 @@
+package Ejemplo_1;
 import javax.tools.ForwardingJavaFileObject;
 
 public class Fibonacci {
     private int n;
 
-    public Fibonacci(){
+    public Fibonacci(int n){
         setN(n);
     }
 
