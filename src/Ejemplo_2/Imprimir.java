@@ -1,5 +1,7 @@
 package Ejemplo_2;
 
+import javax.swing.JOptionPane;
+
 public class Imprimir {
     private int n;
 
@@ -15,23 +17,24 @@ public class Imprimir {
         return n;
     }
 
-    // // MODO ITERATIVO
-    // public String impHola(){
-    //     String imp="";
-    //     for (int i = 0; i < n; i++) {
-    //         imp+="Hola mundo\n";
-    //     }
-    //     return imp;
-    // }
-
-    // MODO RECURSIVO
-    public void impHola(){
-        Imprimir(n);
+    // MODO ITERATIVO
+    public String impHola_I(){
+        String imp="";
+        for (int i = 0; i < n; i++) {
+            imp+="Hola mundo\n";
+        }
+        return imp;
     }
 
-    private void Imprimir(int n){
-        if (n<1) {
-            System.out.println("Hola mundo\n");
+    // MODO RECURSIVO
+    public void impHola_R(){
+        Imp(n);
+    }
+
+    private void Imp(int n){
+        if (n>0) {
+            System.out.println("Hola mundo");
+            Imp(n-1);
         }
     }
 }

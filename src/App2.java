@@ -15,7 +15,7 @@ public class App2 {
         switch (opcion) {
             case 1:
                 Imprimir obj = new Imprimir(4);
-                System.out.println(obj.impHola());
+                obj.impHola_R();
             break;
 
             case 2:
