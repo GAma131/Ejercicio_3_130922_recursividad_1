@@ -26,27 +26,15 @@ public class Imprimir {
         return imp;
     }
 
-    // // MODO RECURSIVO
-    // public void impHola_R(){
-    //     Imp(n);
-    // }
-
-    // private void Imp(int n){
-    //     if (n>0) {
-    //         System.out.println("Hola mundo");
-    //         Imp(n-1);
-    //     }
-    // }
-
     // MODO RECURSIVO
     public void impHola_R(){
         Imp(n);
     }
 
-    private String Imp(int n){
+    private void Imp(int n){
         if (n>0) {
             System.out.println("Hola mundo");
+            Imp(n-1);
         }
-        return Imp(n-1);
     }
 }

@@ -14,8 +14,23 @@ public class App2 {
 
         switch (opcion) {
             case 1:
-                Imprimir obj = new Imprimir(4);
-                obj.impHola_R();
+                int opcion1= Integer.parseInt(JOptionPane.showInputDialog("1) Modo Iterativo>"
+                + "\n2) Modo Recursivo"));
+
+                switch (opcion1) {
+                    case 1:
+                        Imprimir obj = new Imprimir(4);
+                        System.out.println(obj.impHola_I());
+                    break;
+
+                    case 2:
+                        Imprimir obj1 = new Imprimir(4);
+                        obj1.impHola_R();
+                    break;
+
+                    default:
+                        break;
+                }
             break;
 
             case 2:
