@@ -15,11 +15,24 @@ public class Numeros {
         return n;
     }
 
-    public String impNumeros(){
+    // MODO ITERATIVO
+    public String impNumeros_I(){
         String imp="";
         for (int i = 1; i <= n; i++) {
             imp+=i+"\n";
         }
         return imp;
+    }
+
+    // MODO RECURSIVO
+    public void impNumeros_R(){
+        Imp(n);
+    }
+
+    private void Imp(int n){
+        if (n>0) {
+            System.out.println(n);
+            Imp(n-1);
+        }
     }
 }

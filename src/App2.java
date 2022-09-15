@@ -34,8 +34,18 @@ public class App2 {
             break;
 
             case 2:
-                Numeros obj1 = new Numeros(4);
-                System.out.println(obj1.impNumeros());
+                int opcion2= Integer.parseInt(JOptionPane.showInputDialog("1) Modo Iterativo>"
+                + "\n2) Modo Recursivo"));
+
+                switch (opcion2) {
+                    case 1:
+                        Numeros obj2 = new Numeros(4);
+                        obj2.impNumeros_R();
+                    break;
+
+                    default:
+                        break;
+                }
             break;
 
             case 3:
