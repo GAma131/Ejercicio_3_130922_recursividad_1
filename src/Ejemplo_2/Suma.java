@@ -21,7 +21,7 @@ public class Suma {
 
         for (int i = 1; i <= n; i++) {
             imp+=1+"/"+i+" + ";
-            result+=1/i;
+            result+=(1/i);
         }
         return imp+" | Resultado= "+result;
     }
