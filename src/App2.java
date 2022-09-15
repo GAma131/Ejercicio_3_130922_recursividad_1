@@ -40,7 +40,12 @@ public class App2 {
                 switch (opcion2) {
                     case 1:
                         Numeros obj2 = new Numeros(4);
-                        obj2.impNumeros_R();
+                        System.out.println(obj2.impNumeros_I());
+                    break;
+
+                    case 2:
+                        Numeros obj3 = new Numeros(4);
+                        obj3.impNumeros_R();
                     break;
 
                     default:

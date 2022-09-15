@@ -15,6 +15,7 @@ public class NumerosIn {
         return n;
     }
 
+    // METODO ITERATIVO
     public String impNumeros(){
         String imp="";
         int c=n;
@@ -23,5 +24,17 @@ public class NumerosIn {
             c--;
         }
         return imp;
+    }
+
+    // MODO RECURSIVO
+    public void impNumeros_R(){
+        Imp(n);
+    }
+
+    private void Imp(int n){
+        if (n>0) {
+            System.out.println(n);
+            Imp(n-1);
+        }
     }
 }
