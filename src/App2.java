@@ -60,8 +60,23 @@ public class App2 {
             break;
 
             case 4:
-                MCD obj4 = new MCD(5243, 4757);
-                System.out.println(obj4.calcMCD_I());
+                int opcion3= Integer.parseInt(JOptionPane.showInputDialog("1) Modo Iterativo>"
+                    + "\n2) Modo Recursivo"));
+
+                switch (opcion3) {
+                    case 1:
+                        MCD obj4 = new MCD(5243, 4757);
+                        System.out.println(obj4.calcMCD_I());
+                    break;
+
+                    case 2:
+                        MCD obj5 = new MCD(20, 10);
+                        obj5.calcMCD_R();
+                    break;
+
+                    default:
+                        break;
+                }
             break;
 
             default:
