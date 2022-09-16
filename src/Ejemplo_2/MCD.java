@@ -24,4 +24,21 @@ public class MCD {
     public int getX(){
         return x;
     }
+
+    // METODO ITERATIVO
+    public String calcMCD_I(){
+        int residuo=1;
+        int cociente=0;
+
+        while (residuo > 0) {
+            cociente= n/x;
+            residuo= n%x;
+            n=x;
+            x=residuo;
+        }
+
+        return "residuo: "+residuo+" | cociente: "+cociente+" | MCD: "+n;
+    }
+
+    // METODO RECURSIVO
 }

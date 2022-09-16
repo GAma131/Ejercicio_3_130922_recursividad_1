@@ -60,8 +60,8 @@ public class App2 {
             break;
 
             case 4:
-                MCD obj4 = new MCD(4);
-                System.out.println(obj3.calcSuma());
+                MCD obj4 = new MCD(5243, 4757);
+                System.out.println(obj4.calcMCD_I());
             break;
 
             default:
