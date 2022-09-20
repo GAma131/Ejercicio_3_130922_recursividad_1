@@ -15,7 +15,7 @@ public class Factorial {
         return x;
     }
 
-    // * Método interativo Factorial
+    // METODO ITERATIVO
     public int FactIterativo(){
         int fact=1;
         for (int i = 1; i <= x; i++) {
@@ -24,6 +24,8 @@ public class Factorial {
         return fact;
     }
 
+
+    // METODO RECURSIVO
     public int factRecursivo(){
         return fact(x);
     }
@@ -36,5 +38,10 @@ public class Factorial {
             // Caso General
             return n*fact(n-1);
         }
+    }
+
+    @Override
+    public String toString() {
+        return "El valor de n es: "+x;
     }
 }
