@@ -28,13 +28,12 @@ public class MCD {
     // METODO ITERATIVO
     public String calcMCD_I(){
         int residuo=1;
-        int mcd=n;
         while (residuo > 0) {
-            residuo= mcd%x;
-            mcd=x;
+            residuo= n%x;
+            n=x;
             x=residuo;
         }
-        return "residuo: "+residuo+" | MCD: "+mcd;
+        return "residuo: "+residuo+" | MCD: "+n;
     }
 
     // METODO RECURSIVO

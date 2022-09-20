@@ -65,12 +65,12 @@ public class App2 {
 
                 switch (opcion3) {
                     case 1:
-                        MCD obj4 = new MCD(5243, 4757);
+                        MCD obj4 = new MCD(174, 172);
                         System.out.println(obj4.calcMCD_I());
                     break;
 
                     case 2:
-                        MCD obj5 = new MCD(20, 10);
+                        MCD obj5 = new MCD(174, 172);
                         obj5.calcMCD_R();
                     break;
 
