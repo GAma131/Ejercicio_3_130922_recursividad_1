@@ -99,7 +99,7 @@ public class App2 {
 
                     case 2:
                         Suma2 obj7 = new Suma2(5);
-                        obj7.suma_R();
+                        System.out.println(obj7.suma_R());
                         break;
 
                     default:

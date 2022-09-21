@@ -28,16 +28,15 @@ public class Suma2 {
     }
 
     // MODO RECURSIVO
-    public void suma_R() {
-        suma(n);
+    public double suma_R() {
+        return suma(n);
     }
 
-    private void suma(int n) {
+    private double suma(int n) {
         if (n > 0) {
-            n+=n-1;
-            suma(n--);
+            return n + suma(n - 1);
         } else {
-            System.out.println("Resultado: " + n);
+            return n;
         }
     }
 }
