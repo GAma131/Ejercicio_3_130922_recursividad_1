@@ -5,6 +5,7 @@ import Ejemplo_2.MCD;
 import Ejemplo_2.Numeros;
 import Ejemplo_2.NumerosIn;
 import Ejemplo_2.Suma;
+import Ejemplo_3.Division;
 import Ejemplo_3.Suma2;
 
 public class App2 {
@@ -84,6 +85,23 @@ public class App2 {
 
             // TODO: llamar clase división
             case 5:
+                int opcion4 = Integer.parseInt(JOptionPane.showInputDialog("1) Modo Iterativo"
+                        + "\n2) Modo Recursivo"));
+
+                switch (opcion4) {
+                    case 1:
+                        Division obj6 = new Division(5);
+                        System.out.println(obj6.Calcular2());
+                        break;
+
+                    case 2:
+                        Division obj7 = new Division(5);
+                        System.out.println(obj7.Division_R());
+                        break;
+
+                    default:
+                        break;
+                }
 
                 break;
 
@@ -93,13 +111,13 @@ public class App2 {
 
                 switch (opcion5) {
                     case 1:
-                        Suma2 obj6 = new Suma2(5);
-                        System.out.println(obj6.suma_I());
+                        Suma2 obj8 = new Suma2(5);
+                        System.out.println(obj8.suma_I());
                         break;
 
                     case 2:
-                        Suma2 obj7 = new Suma2(5);
-                        System.out.println(obj7.suma_R());
+                        Suma2 obj9 = new Suma2(5);
+                        System.out.println(obj9.suma_R());
                         break;
 
                     default:

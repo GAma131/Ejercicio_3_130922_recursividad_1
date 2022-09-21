@@ -21,26 +21,25 @@ public class Division {
 
 
     // METODO ITERATIVO
-    public double Calcular(){
-        double z=0;
+    // public double Calcular(){
+    //     double z=0;
 
-        for (int i = 1; i <= n; i++) {
-            z+=1/fact(i);
-        }
+    //     for (int i = 1; i <= n; i++) {
+    //         z+=1/fact(i);
+    //     }
 
-        return z;
-    }
+    //     return z;
+    // }
+    // private long fact(int n){
+    // int fact=1;
+    // for (int i = 1; i <= n; i++) {
+    //         fact*=i;
+    //     }
+    //     return fact;
+    // }
 
-    private long fact(int n){
-        int fact=1;
-        for (int i = 1; i <= n; i++) {
-            fact*=i;
-        }
-        return fact;
-    }
-
+    // * OTRA FORMA MODO "ITERATIVO"
     public double Calcular2(){
-        Factorial objFact=new Factorial(n);
         double z=0;
 
         for (int i = 1; i <= n; i++) {
@@ -48,5 +47,26 @@ public class Division {
             z+=i/objFact.FactIterativo();
         }
         return z;
+    }
+
+    // MODO RECURSIVO
+    public double Division_R(){
+        return suma(n);
+    }
+
+    private double suma(int n){
+        if (n>0) {
+            return 1/fact1(n);
+        } else {
+            return n;
+        }
+    }
+
+    private double fact1(int n) {
+        if (n > 0) {
+            return n * fact1(n - 1);
+        } else {
+            return n;
+        }
     }
 }
