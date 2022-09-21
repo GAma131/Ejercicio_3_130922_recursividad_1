@@ -1,2 +1,2 @@
 #Ignorar archivos .class
-src/*.class
+src/**/*.class
