@@ -5,82 +5,110 @@ import Ejemplo_2.MCD;
 import Ejemplo_2.Numeros;
 import Ejemplo_2.NumerosIn;
 import Ejemplo_2.Suma;
+import Ejemplo_3.Suma2;
 
 public class App2 {
     public static void main(String[] args) {
-        int opcion= Integer.parseInt(JOptionPane.showInputDialog("1) Imprimir 'Hola mundo'"
-            + "\n2) Imprimir número (menor a mayor)"
-            + "\n3) Calcular Suma"
-            + "\n4) Calcular máximo común divisor"));
+        int opcion = Integer.parseInt(JOptionPane.showInputDialog("1) Imprimir 'Hola mundo'"
+                + "\n2) Imprimir número (menor a mayor)"
+                + "\n3) Calcular Suma"
+                + "\n4) Calcular máximo común divisor"
+                + "\n5) Calcular división"
+                + "\n6) Suma 2"));
 
         switch (opcion) {
             case 1:
-                int opcion1= Integer.parseInt(JOptionPane.showInputDialog("1) Modo Iterativo>"
-                + "\n2) Modo Recursivo"));
+                int opcion1 = Integer.parseInt(JOptionPane.showInputDialog("1) Modo Iterativo>"
+                        + "\n2) Modo Recursivo"));
 
                 switch (opcion1) {
                     case 1:
                         Imprimir obj = new Imprimir(4);
                         System.out.println(obj.impHola_I());
-                    break;
+                        break;
 
                     case 2:
                         Imprimir obj1 = new Imprimir(4);
                         obj1.impHola_R();
-                    break;
+                        break;
 
                     default:
                         break;
                 }
-            break;
+                break;
 
             case 2:
-                int opcion2= Integer.parseInt(JOptionPane.showInputDialog("1) Modo Iterativo>"
-                + "\n2) Modo Recursivo"));
+                int opcion2 = Integer.parseInt(JOptionPane.showInputDialog("1) Modo Iterativo>"
+                        + "\n2) Modo Recursivo"));
 
                 switch (opcion2) {
                     case 1:
                         Numeros obj2 = new Numeros(4);
                         System.out.println(obj2.impNumeros_I());
-                    break;
+                        break;
 
                     case 2:
                         Numeros obj3 = new Numeros(4);
                         obj3.impNumeros_R();
-                    break;
+                        break;
 
                     default:
                         break;
                 }
-            break;
+                break;
 
             case 3:
                 Suma obj3 = new Suma(4);
                 System.out.println(obj3.calcSuma());
-            break;
+                break;
 
             case 4:
-                int opcion3= Integer.parseInt(JOptionPane.showInputDialog("1) Modo Iterativo>"
-                    + "\n2) Modo Recursivo"));
+                int opcion3 = Integer.parseInt(JOptionPane.showInputDialog("1) Modo Iterativo>"
+                        + "\n2) Modo Recursivo"));
 
                 switch (opcion3) {
                     case 1:
                         MCD obj4 = new MCD(174, 172);
                         System.out.println(obj4.calcMCD_I());
-                    break;
+                        break;
 
                     case 2:
                         MCD obj5 = new MCD(174, 172);
                         obj5.calcMCD_R();
-                    break;
+                        break;
 
                     default:
                         break;
                 }
-            break;
+                break;
+
+            // TODO: llamar clase división
+            case 5:
+
+                break;
+
+            case 6:
+                int opcion5 = Integer.parseInt(JOptionPane.showInputDialog("1) Modo Iterativo>"
+                        + "\n2) Modo Recursivo"));
+
+                switch (opcion5) {
+                    case 1:
+                        Suma2 obj6 = new Suma2(5);
+                        System.out.println(obj6.suma_I());
+                        break;
+
+                    case 2:
+                        Suma2 obj7 = new Suma2(5);
+                        obj7.suma_R();
+                        break;
+
+                    default:
+                        break;
+                }
+                break;
 
             default:
-            JOptionPane.showMessageDialog(null, "Opción no disponible");
+                JOptionPane.showMessageDialog(null, "Opción no disponible");
                 break;
         }
     }
