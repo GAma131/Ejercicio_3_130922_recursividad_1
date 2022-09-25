@@ -1,22 +1,22 @@
 package Ejemplo_1;
 
 public class Factorial {
-    private int x;
+    private double x;
 
-    public Factorial(int x) {
+    public Factorial(double x) {
         setX(x);
     }
 
-    public void setX(int x){
-        this.x = x<0?0:x;
+    public void setX(double i){
+        this.x = i<0?0:i;
     }
 
-    public int getX(){
+    public double getX(){
         return x;
     }
 
     // METODO ITERATIVO
-    public int FactIterativo(){
+    public double FactIterativo(){
         int fact=1;
         for (int i = 1; i <= x; i++) {
             fact*=i;
@@ -26,11 +26,11 @@ public class Factorial {
 
 
     // METODO RECURSIVO
-    public int factRecursivo(){
+    public double factRecursivo(){
         return fact(x);
     }
 
-    private int fact(int n){
+    private double fact(double n){
         if (n == 1 || n==0) {
             // Caso Base
             return 1;

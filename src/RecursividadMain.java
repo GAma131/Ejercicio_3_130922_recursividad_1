@@ -1,23 +1,22 @@
 import Ejemplo_2.Imprimir;
 import Ejemplo_2.MCD;
 import Ejemplo_2.Numeros;
-import Ejemplo_2.NumerosIn;
 import Ejemplo_2.Suma;
 import Ejemplo_3.Division;
 import Ejemplo_3.Suma2;
 import javax.swing.JOptionPane;
 
-public class App2 {
+public class RecursividadMain {
 
   public static void main(String[] args) {
     int opcion = Integer.parseInt(
       JOptionPane.showInputDialog(
         "1) Imprimir 'Hola mundo'" +
         "\n2) Imprimir número (menor a mayor)" +
-        "\n3) Calcular Suma" +
+        "\n3) Calcular Suma (fracciones)" +
         "\n4) Calcular máximo común divisor" +
-        "\n5) Calcular división" +
-        "\n6) Suma 2"
+        "\n5) Calcular división (fracciones con factorial)" +
+        "\n6) Suma de números"
       )
     );
 
@@ -63,13 +62,29 @@ public class App2 {
         }
         break;
       case 3:
-        Suma obj3 = new Suma(4);
-        System.out.println(obj3.calcSuma());
+        int opcion_ = Integer.parseInt(
+          JOptionPane.showInputDialog(
+            "1) Modo Iterativo" + "\n2) Modo Recursivo"
+          )
+        );
+
+        switch (opcion_) {
+          case 1:
+            Suma obj_ = new Suma(2);
+            System.out.println(obj_.calcSuma_I());
+            break;
+          case 2:
+            Suma obj__ = new Suma(2);
+            System.out.println(obj__.calcSuma_R());
+            break;
+          default:
+            break;
+        }
         break;
       case 4:
         int opcion3 = Integer.parseInt(
           JOptionPane.showInputDialog(
-            "1) Modo Iterativo>" + "\n2) Modo Recursivo"
+            "1) Modo Iterativo" + "\n2) Modo Recursivo"
           )
         );
 
@@ -97,7 +112,7 @@ public class App2 {
         switch (opcion4) {
           case 1:
             Division obj6 = new Division(5);
-            System.out.println(obj6.Calcular2());
+            System.out.println(obj6.Calcular());
             break;
           case 2:
             Division obj7 = new Division(5);
@@ -111,7 +126,7 @@ public class App2 {
       case 6:
         int opcion5 = Integer.parseInt(
           JOptionPane.showInputDialog(
-            "1) Modo Iterativo>" + "\n2) Modo Recursivo"
+            "1) Modo Iterativo" + "\n2) Modo Recursivo"
           )
         );
 

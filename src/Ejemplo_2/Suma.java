@@ -15,14 +15,26 @@ public class Suma {
         return n;
     }
 
-    public String calcSuma(){
-        String imp="";
-        double result=0;
+    // MODO ITERATIVO
+    public double calcSuma_I(){
+        double result=0.0;
 
-        for (int i = 1; i <= n; i++) {
-            imp+=1+"/"+i+" + ";
+        for (double i = 1; i <= n; i++) {
             result+=(1/i);
         }
-        return imp+" | Resultado= "+result;
+        return result;
+    }
+
+    // MODO RECURSIVO
+    public double calcSuma_R(){
+        return calcSuma(n);
+    }
+
+    public double calcSuma(double n){
+        if (n != 1) {
+            return calcSuma(n-1) + (1/n);
+        }else{
+            return 1;
+        }
     }
 }
