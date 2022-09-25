@@ -1,6 +1,4 @@
-package Ejemplo_3;
-
-import Ejemplo_2.Suma;
+package Ejer_Recursividad;
 
 public class Suma2 {
 

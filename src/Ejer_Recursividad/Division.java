@@ -1,4 +1,4 @@
-package Ejemplo_3;
+package Ejer_Recursividad;
 
 import javax.swing.JOptionPane;
 

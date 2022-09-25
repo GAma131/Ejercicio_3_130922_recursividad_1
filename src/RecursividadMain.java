@@ -1,10 +1,11 @@
-import Ejemplo_2.Imprimir;
-import Ejemplo_2.MCD;
-import Ejemplo_2.Numeros;
-import Ejemplo_2.Suma;
-import Ejemplo_3.Division;
-import Ejemplo_3.Suma2;
 import javax.swing.JOptionPane;
+
+import Ejer_Recursividad.Division;
+import Ejer_Recursividad.Imprimir;
+import Ejer_Recursividad.MCD;
+import Ejer_Recursividad.Numeros;
+import Ejer_Recursividad.Suma;
+import Ejer_Recursividad.Suma2;
 
 public class RecursividadMain {
 

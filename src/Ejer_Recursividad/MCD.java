@@ -1,4 +1,4 @@
-package Ejemplo_2;
+package Ejer_Recursividad;
 
 public class MCD {
     private int n;
