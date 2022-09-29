@@ -31,10 +31,10 @@ public class Suma {
     }
 
     public double calcSuma(double n){
-        if (n != 1) {
-            return calcSuma(n-1) + (1/n);
-        }else{
+        if (n == 1) {
             return 1;
+        }else{
+            return calcSuma(n-1) + calcSuma(1/n);
         }
     }
 }

@@ -6,13 +6,13 @@ import Ejemplo_1.Factorial;
 
 public class Division {
     private int n;
-    private double e;
+    private double result;
     private Factorial objFact;
 
     public Division(int n) {
         setN(n);
         objFact= new Factorial(n);
-        this.e=1;
+        this.result=1;
     }
 
     public void setN(int n) {
@@ -24,11 +24,11 @@ public class Division {
     }
 
     public void setE(double e) {
-        this.e = e;
+        this.result = e;
     }
 
     public double getE() {
-        return e;
+        return result;
     }
 
 
@@ -53,10 +53,10 @@ public class Division {
             return 1;
         } else {
             objFact.setX(n);
-            e+= n / objFact.FactIterativo();
+            result+= n / objFact.FactIterativo();
             suma(n-1);
 
-            return e;
+            return result;
         }
     }
 }
